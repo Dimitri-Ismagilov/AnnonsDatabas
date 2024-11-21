@@ -1,6 +1,5 @@
 using AnnonsDatabas.Repository;
 using AnnonsDatabas.Repository.Entities;
-using AnnonsDatabas.Repository.Repos;
 
 namespace AnnonsDatabas.Views
 {
@@ -78,7 +77,7 @@ namespace AnnonsDatabas.Views
                     .ToList();
             }
 
-            //
+            //Sats som styr storteringen
             switch (orderBy)
             {
                 case 1:

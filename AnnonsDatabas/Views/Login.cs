@@ -1,14 +1,4 @@
 ﻿using AnnonsDatabas.Repository;
-using AnnonsDatabas.Repository.Entities;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace AnnonsDatabas.Views
 {
@@ -20,7 +10,6 @@ namespace AnnonsDatabas.Views
             InitializeComponent();
             this.AcceptButton = buttonLogin;
         }
-
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             var userList = user.GetAppUser();
@@ -31,7 +20,6 @@ namespace AnnonsDatabas.Views
             {
                 MessageBox.Show("Användarnamn och Lösenord måste vara ifyllda för att logga in!");
             }
-
 
             var matchedUser = userList
                 .FirstOrDefault(u => u.Login.Equals(login, StringComparison.OrdinalIgnoreCase) && u.Password == password);
@@ -47,8 +35,6 @@ namespace AnnonsDatabas.Views
             {
                 MessageBox.Show("Felaktiga inloggningsuppgifter");
             }
-
-
         }
 
         private void buttonCreateUser_Click(object sender, EventArgs e)

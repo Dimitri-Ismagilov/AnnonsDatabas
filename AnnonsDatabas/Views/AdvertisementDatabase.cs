@@ -12,7 +12,7 @@ namespace AnnonsDatabas.Views
             InitializeComponent();
             UpdateListViewResult();
             PopulateCategoryComboBox();
-
+            this.AcceptButton = buttonSearch;
         }
 
         private void buttonSearch_Click(object sender, EventArgs e)

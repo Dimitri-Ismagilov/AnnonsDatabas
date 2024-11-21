@@ -8,6 +8,7 @@ namespace AnnonsDatabas.Views
         public CreateNewUser()
         {
             InitializeComponent();
+            this.AcceptButton = buttonCreateUser;
         }
 
         private void buttonCreateUser_Click(object sender, EventArgs e)

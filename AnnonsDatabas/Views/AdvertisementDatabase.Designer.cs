@@ -77,7 +77,7 @@
             comboBoxSearchCategory.Location = new Point(6, 86);
             comboBoxSearchCategory.Name = "comboBoxSearchCategory";
             comboBoxSearchCategory.Size = new Size(317, 38);
-            comboBoxSearchCategory.TabIndex = 1;
+            comboBoxSearchCategory.TabIndex = 3;
             // 
             // textBoxSearchTitle
             // 
@@ -85,14 +85,14 @@
             textBoxSearchTitle.Name = "textBoxSearchTitle";
             textBoxSearchTitle.PlaceholderText = "Sök på Titel";
             textBoxSearchTitle.Size = new Size(476, 35);
-            textBoxSearchTitle.TabIndex = 0;
+            textBoxSearchTitle.TabIndex = 1;
             // 
             // buttonLogin
             // 
             buttonLogin.Location = new Point(1612, 766);
             buttonLogin.Name = "buttonLogin";
             buttonLogin.Size = new Size(131, 40);
-            buttonLogin.TabIndex = 2;
+            buttonLogin.TabIndex = 5;
             buttonLogin.Text = "Logga in";
             buttonLogin.UseVisualStyleBackColor = true;
             buttonLogin.Click += buttonLogin_Click;
@@ -105,7 +105,7 @@
             listViewResult.Location = new Point(27, 251);
             listViewResult.Name = "listViewResult";
             listViewResult.Size = new Size(796, 459);
-            listViewResult.TabIndex = 3;
+            listViewResult.TabIndex = 6;
             listViewResult.UseCompatibleStateImageBehavior = false;
             listViewResult.View = View.Details;
             listViewResult.SelectedIndexChanged += listViewResult_SelectedIndexChanged;
@@ -148,48 +148,53 @@
             // textBoxDescription
             // 
             textBoxDescription.BackColor = SystemColors.Control;
+            textBoxDescription.BorderStyle = BorderStyle.None;
             textBoxDescription.Location = new Point(1055, 251);
             textBoxDescription.Multiline = true;
             textBoxDescription.Name = "textBoxDescription";
             textBoxDescription.ReadOnly = true;
             textBoxDescription.Size = new Size(688, 459);
-            textBoxDescription.TabIndex = 5;
+            textBoxDescription.TabIndex = 11;
             // 
             // textBoxTitle
             // 
             textBoxTitle.BackColor = SystemColors.Control;
+            textBoxTitle.BorderStyle = BorderStyle.None;
             textBoxTitle.Location = new Point(1055, 54);
             textBoxTitle.Name = "textBoxTitle";
             textBoxTitle.ReadOnly = true;
-            textBoxTitle.Size = new Size(688, 35);
-            textBoxTitle.TabIndex = 6;
+            textBoxTitle.Size = new Size(688, 28);
+            textBoxTitle.TabIndex = 7;
             // 
             // textBoxCategory
             // 
             textBoxCategory.BackColor = SystemColors.Control;
+            textBoxCategory.BorderStyle = BorderStyle.None;
             textBoxCategory.Location = new Point(1055, 109);
             textBoxCategory.Name = "textBoxCategory";
             textBoxCategory.ReadOnly = true;
-            textBoxCategory.Size = new Size(688, 35);
-            textBoxCategory.TabIndex = 7;
+            textBoxCategory.Size = new Size(688, 28);
+            textBoxCategory.TabIndex = 8;
             // 
             // textBoxPrice
             // 
             textBoxPrice.BackColor = SystemColors.Control;
+            textBoxPrice.BorderStyle = BorderStyle.None;
             textBoxPrice.Location = new Point(1055, 177);
             textBoxPrice.Name = "textBoxPrice";
             textBoxPrice.ReadOnly = true;
-            textBoxPrice.Size = new Size(341, 35);
-            textBoxPrice.TabIndex = 8;
+            textBoxPrice.Size = new Size(341, 28);
+            textBoxPrice.TabIndex = 9;
             // 
             // textBoxDate
             // 
             textBoxDate.BackColor = SystemColors.Control;
+            textBoxDate.BorderStyle = BorderStyle.None;
             textBoxDate.Location = new Point(1402, 177);
             textBoxDate.Name = "textBoxDate";
             textBoxDate.ReadOnly = true;
-            textBoxDate.Size = new Size(341, 35);
-            textBoxDate.TabIndex = 9;
+            textBoxDate.Size = new Size(341, 28);
+            textBoxDate.TabIndex = 10;
             // 
             // AdvertisementDatabase
             // 

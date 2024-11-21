@@ -50,7 +50,7 @@
             textBoxTitle.Name = "textBoxTitle";
             textBoxTitle.PlaceholderText = "Titel";
             textBoxTitle.Size = new Size(555, 35);
-            textBoxTitle.TabIndex = 0;
+            textBoxTitle.TabIndex = 1;
             // 
             // textBoxPrice
             // 
@@ -77,7 +77,7 @@
             comboBoxCategory.Location = new Point(338, 227);
             comboBoxCategory.Name = "comboBoxCategory";
             comboBoxCategory.Size = new Size(271, 38);
-            comboBoxCategory.TabIndex = 5;
+            comboBoxCategory.TabIndex = 3;
             // 
             // labelAdvertisement
             // 
@@ -85,7 +85,7 @@
             labelAdvertisement.Location = new Point(1404, 85);
             labelAdvertisement.Name = "labelAdvertisement";
             labelAdvertisement.Size = new Size(148, 30);
-            labelAdvertisement.TabIndex = 6;
+            labelAdvertisement.TabIndex = 10;
             labelAdvertisement.Text = "Dina annonser";
             // 
             // labelCreateNewAdvertisement
@@ -94,7 +94,7 @@
             labelCreateNewAdvertisement.Location = new Point(52, 108);
             labelCreateNewAdvertisement.Name = "labelCreateNewAdvertisement";
             labelCreateNewAdvertisement.Size = new Size(199, 30);
-            labelCreateNewAdvertisement.TabIndex = 7;
+            labelCreateNewAdvertisement.TabIndex = 0;
             labelCreateNewAdvertisement.Text = "Skapa en ny annons";
             // 
             // buttonAdd
@@ -102,7 +102,7 @@
             buttonAdd.Location = new Point(1261, 501);
             buttonAdd.Name = "buttonAdd";
             buttonAdd.Size = new Size(435, 40);
-            buttonAdd.TabIndex = 8;
+            buttonAdd.TabIndex = 5;
             buttonAdd.Text = "Lägg till";
             buttonAdd.UseVisualStyleBackColor = true;
             buttonAdd.Click += buttonAdd_Click;
@@ -112,7 +112,7 @@
             buttonUpdate.Location = new Point(1261, 564);
             buttonUpdate.Name = "buttonUpdate";
             buttonUpdate.Size = new Size(435, 40);
-            buttonUpdate.TabIndex = 9;
+            buttonUpdate.TabIndex = 6;
             buttonUpdate.Text = "Uppdatera";
             buttonUpdate.UseVisualStyleBackColor = true;
             buttonUpdate.Click += buttonUpdate_Click;
@@ -122,7 +122,7 @@
             buttonDelete.Location = new Point(1261, 630);
             buttonDelete.Name = "buttonDelete";
             buttonDelete.Size = new Size(435, 40);
-            buttonDelete.TabIndex = 10;
+            buttonDelete.TabIndex = 7;
             buttonDelete.Text = "Radera";
             buttonDelete.UseVisualStyleBackColor = true;
             buttonDelete.Click += buttonDelete_Click;
@@ -132,7 +132,7 @@
             buttonLogOut.Location = new Point(1261, 755);
             buttonLogOut.Name = "buttonLogOut";
             buttonLogOut.Size = new Size(435, 40);
-            buttonLogOut.TabIndex = 11;
+            buttonLogOut.TabIndex = 8;
             buttonLogOut.Text = "Logga ut";
             buttonLogOut.UseVisualStyleBackColor = true;
             buttonLogOut.Click += buttonLogOut_Click;
@@ -145,7 +145,7 @@
             listViewResult.Location = new Point(1261, 118);
             listViewResult.Name = "listViewResult";
             listViewResult.Size = new Size(435, 377);
-            listViewResult.TabIndex = 12;
+            listViewResult.TabIndex = 9;
             listViewResult.UseCompatibleStateImageBehavior = false;
             listViewResult.View = View.Details;
             listViewResult.SelectedIndexChanged += listViewResult_SelectedIndexChanged;

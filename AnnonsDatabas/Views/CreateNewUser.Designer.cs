@@ -41,7 +41,7 @@
             buttonCreateUser.Location = new Point(397, 553);
             buttonCreateUser.Name = "buttonCreateUser";
             buttonCreateUser.Size = new Size(280, 40);
-            buttonCreateUser.TabIndex = 4;
+            buttonCreateUser.TabIndex = 3;
             buttonCreateUser.Text = "Skappa nytt konto";
             buttonCreateUser.UseVisualStyleBackColor = true;
             buttonCreateUser.Click += buttonCreateUser_Click;
@@ -53,7 +53,7 @@
             groupBoxCreateNew.Location = new Point(343, 212);
             groupBoxCreateNew.Name = "groupBoxCreateNew";
             groupBoxCreateNew.Size = new Size(386, 285);
-            groupBoxCreateNew.TabIndex = 3;
+            groupBoxCreateNew.TabIndex = 0;
             groupBoxCreateNew.TabStop = false;
             groupBoxCreateNew.Text = "Skappa nytt konto";
             // 
@@ -63,7 +63,7 @@
             textBoxPassword.Name = "textBoxPassword";
             textBoxPassword.PlaceholderText = "Lösenord";
             textBoxPassword.Size = new Size(280, 35);
-            textBoxPassword.TabIndex = 1;
+            textBoxPassword.TabIndex = 2;
             // 
             // textBoxUserName
             // 
@@ -71,14 +71,14 @@
             textBoxUserName.Name = "textBoxUserName";
             textBoxUserName.PlaceholderText = "Användarnamn";
             textBoxUserName.Size = new Size(280, 35);
-            textBoxUserName.TabIndex = 0;
+            textBoxUserName.TabIndex = 1;
             // 
             // buttonCancel
             // 
             buttonCancel.Location = new Point(397, 609);
             buttonCancel.Name = "buttonCancel";
             buttonCancel.Size = new Size(280, 40);
-            buttonCancel.TabIndex = 5;
+            buttonCancel.TabIndex = 4;
             buttonCancel.Text = "Avbryt";
             buttonCancel.UseVisualStyleBackColor = true;
             buttonCancel.Click += buttonCancel_Click;

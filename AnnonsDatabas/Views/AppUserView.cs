@@ -1,15 +1,6 @@
 ﻿using AnnonsDatabas.Repository;
 using AnnonsDatabas.Repository.Entities;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AnnonsDatabas.Views
 {
@@ -33,7 +24,6 @@ namespace AnnonsDatabas.Views
                 return;
             }
 
-
             var advertisement = new Advertisement();
             
             advertisement.AdvertisementTitle = textBoxTitle.Text;
@@ -50,7 +40,6 @@ namespace AnnonsDatabas.Views
             advertisements.InsertAdvertisements(advertisement.AdvertisementTitle, advertisement.AdvertisementDescription, advertisement.Price,
                 advertisement.PublishedTime, advertisement.CategoryID, advertisement.UserID);
             UpdateListView();
-
         }
 
         private void buttonUpdate_Click(object sender, EventArgs e)
@@ -70,7 +59,6 @@ namespace AnnonsDatabas.Views
                 advertisementID = Convert.ToInt32(advertisementIDText);
             }
 
-
             var advertisement = new Advertisement();
 
             advertisement.AdvertisementTitle = textBoxTitle.Text;
@@ -88,48 +76,10 @@ namespace AnnonsDatabas.Views
                 advertisement.PublishedTime, advertisement.CategoryID);
            
             UpdateListView();
-            //else
-            //{
-            //    var advertisement = ListViewItem()
-            //    ListViewItem item = listViewResult.SelectedItems[0];
-            //    string advertisementIDText = item.SubItems[6].Text;
-            //    int advertisementID;
-            //    if (int.TryParse(advertisementIDText, out advertisementID))
-            //    {
-            //        advertisementID = Convert.ToInt32(advertisementIDText);
-            //    }
-            //    advertisement.AdvertisementTitle = textBoxTitle.Text;
-            //    advertisement.AdvertisementDescription = textBoxDescription.Text;
-            //    decimal price;
-            //    if (decimal.TryParse(textBoxPrice.Text, out price))
-            //    {
-            //        advertisement.Price = price;
-            //    }
-            //    advertisement.PublishedTime = DateTime.Now;
-            //    var selectedCategoryID = (int)comboBoxCategory.SelectedValue;
-            //    advertisement.CategoryID = selectedCategoryID;
-            //    advertisement.UserID = userID;
-
-            //}
-
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            //if (listViewResult.SelectedItems[0] = 0)
-            //{
-            //    MessageBox.Show("Du har inte valt någon annons");
-            //    return;
-            //}
-            //ListViewItem item = listViewResult.SelectedItems[0];
-            //string advertisementIDText = item.SubItems[6].Text;
-            //int advertisementID;
-            //if (int.TryParse(advertisementIDText, out advertisementID))
-            //{
-            //    advertisementID = Convert.ToInt32(advertisementIDText);
-            //}
-            //advertisements.DeleteAdvertisement(advertisementID);
-            //UpdateListView();
             if (listViewResult.SelectedItems.Count == 0)
             {
                 MessageBox.Show("Du har inte valt någon annons");
@@ -144,33 +94,16 @@ namespace AnnonsDatabas.Views
             }
             advertisements.DeleteAdvertisement(advertisementID);
             UpdateListView();
-
-            //if (listViewResult.SelectedItems != null)
-            //{
-            //    ListViewItem item = listViewResult.SelectedItems[0];
-            //    string advertisementIDText = item.SubItems[6].Text;
-            //    int advertisementID;
-            //    if (int.TryParse(advertisementIDText, out advertisementID))
-            //    {
-            //        advertisementID = Convert.ToInt32(advertisementIDText);
-            //    }
-            //    advertisements.DeleteAdvertisement(advertisementID);
-            //    UpdateListView();
-
-            //} else
-            //{
-            //    MessageBox.Show("Du har inte valt någon annons");
-            //    return;
-            //}
-
         }
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
         //Lagra 
         public int userID;
+
         private void PopulateCategoryComboBox()
         {
             List<Category> categories = advertisements.GetCategories();
@@ -190,6 +123,7 @@ namespace AnnonsDatabas.Views
             //Standardval
             comboBoxCategory.SelectedIndex = 0;
         }
+
         public void UpdateListView()
         {
             var advertisementList = advertisements.GetAdvertisements();
@@ -233,7 +167,6 @@ namespace AnnonsDatabas.Views
 
             return item;
         }
-
         private void listViewResult_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewResult.SelectedItems.Count > 0)
